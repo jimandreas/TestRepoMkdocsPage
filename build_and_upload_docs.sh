@@ -14,6 +14,8 @@
 #
 #  script assumes you run this with the current dir in the "docs" folder
 
+set -ex
+
 REPO="git@github.com:jimandreas/TestRepoMkdocsPage"
 DIR=build/temp-$$
 
