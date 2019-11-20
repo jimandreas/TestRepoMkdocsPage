@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# This script clones the current repo to a temp dir
+# and then builds and uploads the documentation.
+# The cloned repo is left in the build/ dir as I am allergic to
+# unguarded "rm -rf" commands in scripts.   The documentation
+# then lives in the github repo in the "gh-pages" branch.
+# 
+# The documentation on Github uses the awesome mkdocs + Material facility
+# kindly provided by the awesome Martin Donath (squidfunk)
+# FMI:
+# https://www.mkdocs.org/
+# https://squidfunk.github.io/mkdocs-material/
+#
+#  script assumes you run this with the current dir in the "docs" folder
+
+set -ex
+
+REPO="git@github.com:jimandreas/TestRepoMkdocsPage"
+DIR=build/temp-$$
+
+cd ..
+if [ ! -e build ]; then
+   mkdir build
+fi
+if [ -e $DIR ]; then
+   echo "build dir already exists!! EXITING."
+   exit
+fi
+
+# Clone the current repo into temp folder
+git clone $REPO $DIR
+
+# Move working directory into temp folder
+cd $DIR
+
+# Build the site and push the new files up to GitHub
+mkdocs gh-deploy
+
+
