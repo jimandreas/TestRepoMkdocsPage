@@ -13,17 +13,19 @@
 # https://squidfunk.github.io/mkdocs-material/
 #
 #  script assumes you run this with the current dir in the "docs" folder
+#  Note for windoze users : in gvim do a:
+#    set ff=unix
+#  to get the right line endings for unix.
 
-set -ex
 
 REPO="git@github.com:jimandreas/TestRepoMkdocsPage"
 DIR=build/temp-$$
 
 cd ..
-if [ ! -e build ]; then
+if [ ! -d build ]; then
    mkdir build
 fi
-if [ -e $DIR ]; then
+if [ -d $DIR ]; then
    echo "build dir already exists!! EXITING."
    exit
 fi
