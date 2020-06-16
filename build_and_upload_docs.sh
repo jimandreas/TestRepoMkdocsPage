@@ -18,13 +18,19 @@
 #  to get the right line endings for unix.
 
 
-REPO="git@github.com:jimandreas/TestRepoMkdocsPage"
+REPO="https://github.com/jimandreas/TestRepoMkdocsPage"
 DIR=build/temp-$$
+
+if [ ! -f build_and_upload_docs.sh ]; then
+   echo "this script must be run from the docs dir"
+   exit
+fi
 
 cd ..
 if [ ! -d build ]; then
    mkdir build
 fi
+
 if [ -d $DIR ]; then
    echo "build dir already exists!! EXITING."
    exit
