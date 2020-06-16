@@ -8,3 +8,6 @@ Important notes:
 - The index.md file must begin with a lower case "i"
 - Gradle is not needed for deploying the docs.cd
 
+Committing
+--------------
+The build_and_upload_docs bash script must be run from the docs directory.
