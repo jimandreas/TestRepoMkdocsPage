@@ -11,3 +11,7 @@ Important notes:
 Committing
 --------------
 The build_and_upload_docs bash script must be run from the docs directory.
+
+Updating
+---------
+A test after updating the cygwin package.
