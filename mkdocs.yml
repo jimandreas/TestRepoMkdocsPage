@@ -16,8 +16,9 @@ theme:
   name: 'material'
   language: 'en'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    - scheme: default
+      primary: 'indigo'
+      accent: 'indigo'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
