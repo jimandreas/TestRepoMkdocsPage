@@ -1,43 +1,44 @@
 # Project information
-site_name: 'Testing Mkdocs'
-site_description: 'Repo for testing Mkdocs'
-site_author: 'Jim Andreas'
-site_url: 'https://jimandreas.github.io/TestRepoMkdocsPage/'
+site_name: Testing Mkdocs
+site_description: Repo for testing Mkdocs
+site_author: Jim Andreas
+site_url: https://jimandreas.github.io/TestRepoMkdocsPage/
 
 # Repository
-repo_name: 'jimandreas/TestRepoMkdocsPage'
-repo_url: 'https://github.com/jimandreas/TestRepoMkdocsPage'
+repo_name: jimandreas/TestRepoMkdocsPage
+repo_url: https://github.com/jimandreas/TestRepoMkdocsPage
+edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2021 Jim Andreas'
+copyright: Copyright &copy; 2021 Jim Andreas
 
 # Configuration
 theme:
-  name: 'material'
-#  language: 'en'
+  name: material
+#  language: en
 #  palette:
 #    - scheme: default
-#      primary: 'indigo'
-#      accent: 'indigo'
+#      primary: indigo
+#      accent: indigo
 #  font:
-#    text: 'Roboto'
-#    code: 'Roboto Mono'
+#    text: Roboto
+#    code: Roboto Mono
 
 # Customization
-extra:
-  manifest: 'manifest.webmanifest'
-  social:
-    - type: 'github'
-      link: 'https://github.com/jimandreas'
-    - type: 'twitter'
-      link: 'https://twitter.com/jimandreasdev'
-    - type: 'linkedin'
-      link: 'https://linkedin.com/in/jimandreas'
+#extra:
+#  manifest: manifest.webmanifest
+#  social:
+#    - type: github
+#      link: https://github.com/jimandreas
+#    - type: twitter
+#      link: https://twitter.com/jimandreasdev
+#    - type: linkedin
+#      link: https://linkedin.com/in/jimandreas
 
 # Google Analytics
 #google_analytics:
-#  - 'UA-XXXXXXXX-X'
-#  - 'auto'
+#  - UA-XXXXXXXX-X
+#  - auto
 
 # Extensions
 #markdown_extensions:
