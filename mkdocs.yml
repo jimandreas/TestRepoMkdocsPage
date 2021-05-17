@@ -24,7 +24,7 @@ theme:
 #    text: Roboto
 #    code: Roboto Mono
 
- Customization
+# Customization
 extra:
   social:
     - icon: fontawesome/brands/github
