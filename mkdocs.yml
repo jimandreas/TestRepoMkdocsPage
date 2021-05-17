@@ -14,14 +14,14 @@ copyright: 'Copyright &copy; 2021 Jim Andreas'
 # Configuration
 theme:
   name: 'material'
-  language: 'en'
-  palette:
-    - scheme: default
-      primary: 'indigo'
-      accent: 'indigo'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+#  language: 'en'
+#  palette:
+#    - scheme: default
+#      primary: 'indigo'
+#      accent: 'indigo'
+#  font:
+#    text: 'Roboto'
+#    code: 'Roboto Mono'
 
 # Customization
 extra:
@@ -40,10 +40,10 @@ extra:
 #  - 'auto'
 
 # Extensions
-markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
+#markdown_extensions:
+#  - admonition
+#  - codehilite:
+#      guess_lang: false
+#  - toc:
+#      permalink: true
 
