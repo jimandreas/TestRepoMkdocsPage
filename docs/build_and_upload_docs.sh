@@ -13,8 +13,7 @@
 # https://squidfunk.github.io/mkdocs-material/
 #
 
-echo  mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com/jimandreas/TestRepoMkdocsPage
-
+repotarget="TestRepoMkdocsPage"
 
 #  Posting changes
 #  1) commit and push your changes to master!!
@@ -30,7 +29,7 @@ echo  mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com
 
 #  4) Press "Shift-F5" to reload the browser and see your changes (Chrome).
 
-REPO="https://github.com/jimandreas/TestRepoMkdocsPage"
+REPO="https://github.com/jimandreas/$repotarget"
 DIR=../../build/temp-$$
 
 if [ ! -f build_and_upload_docs.sh ]; then
@@ -55,6 +54,6 @@ git clone $REPO $DIR
 cd $DIR
 
 # Build the site and push the new files up to GitHub
-mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com/jimandreas/TestRepoMkdocsPage
+mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com/jimandreas/$repotarget
 
 

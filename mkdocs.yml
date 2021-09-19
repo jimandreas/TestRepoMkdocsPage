@@ -15,6 +15,23 @@ copyright: Copyright &copy; 2021 Jim Andreas
 # Configuration
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/sandbox_transparent.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 #  language: en
 #  palette:
 #    - scheme: default
@@ -33,11 +50,6 @@ extra:
       link: https://twitter.com/jimandreasdev
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/jimandreas
-
-# Google Analytics
-#google_analytics:
-#  - UA-XXXXXXXX-X
-#  - auto
 
 # Extensions
 markdown_extensions:
