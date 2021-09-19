@@ -5,18 +5,30 @@
 # The cloned repo is left in the build/ dir as I am allergic to
 # unguarded "rm -rf" commands in scripts.   The documentation
 # then lives in the github repo in the "gh-pages" branch.
-# 
+#
 # The documentation on Github uses the awesome mkdocs + Material facility
 # kindly provided by the awesome Martin Donath (squidfunk)
 # FMI:
 # https://www.mkdocs.org/
 # https://squidfunk.github.io/mkdocs-material/
 #
-#  script assumes you run this with the current dir in the "docs" folder
-#  Note for windoze users : in gvim do a:
-#    set ff=unix
-#  to get the right line endings for unix.
 
+echo  mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com/jimandreas/TestRepoMkdocsPage
+
+
+#  Posting changes
+#  1) commit and push your changes to master!!
+
+#  script assumes you run this with the current dir in the "docs" folder
+#  Prepare the script - use vim to fix line endings:
+#  2)  set ff=unix
+#
+#  Then cd to the docs dir and run:
+#  3) bash -x build_and_upload_docs.sh
+
+#  Check the "gh-pages" branch to see the changes.
+
+#  4) Press "Shift-F5" to reload the browser and see your changes (Chrome).
 
 REPO="https://github.com/jimandreas/TestRepoMkdocsPage"
 DIR=../../build/temp-$$
@@ -43,6 +55,6 @@ git clone $REPO $DIR
 cd $DIR
 
 # Build the site and push the new files up to GitHub
-mkdocs gh-deploy
+mkdocs gh-deploy --force -r https://jimandreas:${TOKEN_MADNESS}@github.com/jimandreas/TestRepoMkdocsPage
 
 
